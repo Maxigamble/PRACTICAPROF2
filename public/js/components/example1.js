@@ -1,1 +1,0 @@
-export const ComponentEjemplo = ()=> `<h1>Example 1 </h1>`

@@ -2,5 +2,24 @@
   "dependencies": {
     "express": "^4.18.1",
     "node.js": "^0.0.1-security"
-  }
+  },
+  "name": "cryptopracticados",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxigamble/PRACTICAPROF2.git"
+  },
+  "keywords": [],
+  "author": "Maxi Chavez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maxigamble/PRACTICAPROF2/issues"
+  },
+  "homepage": "https://github.com/Maxigamble/PRACTICAPROF2#readme",
+  "description": "Practica dos"
 }
