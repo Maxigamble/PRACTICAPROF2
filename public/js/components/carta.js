@@ -1,8 +1,8 @@
-export const Carta = () => `<div class="row carta mx-2">
+export const Carta = () => `<div id= "cartita" class="row carta mx-2">
 <!--mx = margin:auto;-->
 <div class="col-md-4 min-vh-150">
     <!--Foto-->
-    <img src="../img/frenteblanco.png" class="img-fluid" alt="fotocripto" />
+    <img src="../img/frenteblanco.png" class="img-fluid" alt="Fotocripto" />
 </div>
 <div class="col-md-8">
     <!--Contenido-->

@@ -27,7 +27,7 @@ const NavBarRender = () => {
 const CartaRender = () => {
       let root = document.getElementById ("content-root");
       root.innerHTML +=Carta ()
-      for (let index = 0; index < 10; index++) {
+      for (let index = 0; index < 11; index++) {
             root.innerHTML +=Carta ();
             
       }

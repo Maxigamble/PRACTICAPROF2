@@ -4,4 +4,15 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 
 
-}
+} 
+
+#cartita {
+    padding: 10px;
+    border: 2px  rgb(48, 48, 48) solid;
+    border-radius: 5px;
+    margin: 25px;
+    align-items: center;
+    text-align: center ;
+    
+    
+    } 
