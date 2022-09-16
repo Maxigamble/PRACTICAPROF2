@@ -2,12 +2,15 @@
 import { NavBar } from "../components/navbar.js";
 import { Footer } from "../components/footer.js";
 import { Carta } from "../components/carta.js";
+import { GetCryptos, GetMonedas} from "../services/coingecko.js";
 
 
 export const IndexRender = () => { //indicar que se ejecuta cuando inicia el index.html
       FooterRender()
       NavBarRender ()
       CartaRender ()
+      GetCryptos ()
+      GetMonedas ()
       
       
      
