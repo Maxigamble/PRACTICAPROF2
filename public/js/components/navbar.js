@@ -1,29 +1,35 @@
-export const NavBar = ()=> `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container-fluid">
+export const NavBar = () => `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid ">
   <a class="navbar-brand" href="#">CRYPTOHELPER</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-     
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Moneda
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">Dolar</a></li>
-          <li><a class="dropdown-item" href="#">Euro</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Mas..</a></li>
-        </ul>
-      </li>
-      
+    <div class="select">
+    <select id="select-currency">
+    </select>
+  </div>
     </ul>
-    <form class="d-flex">
-      <input class="form-control me-2" type="buscar" placeholder="Buscar..." aria-label="Buscar">
-      <button class="btn btn-outline-success" type="submit">Buscar</button>
+	 <div id="search-div" class="search d-flex justify-content-end">
+		 <input id="search-input" type="text" name="q" placeholder="Buscar criptomonedas..." />
+		 <ul id="results" class="results" >
+		 </ul>
+	 </div>
+</section>
     </form>
   </div>
 </div>
-</nav>`
+</nav>
+`
+
+export const Result = (url, name, tag) => `
+  <li><a href="#">${name}<br /><span>${tag}</span></a></li>
+`
+
+export const Option = (value, currency) => {
+  let op = document.createElement("option");
+  op.value = value;
+  op.innerHTML = currency;
+  return op;
+}

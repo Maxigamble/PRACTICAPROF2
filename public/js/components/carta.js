@@ -1,25 +1,25 @@
-export const Carta = () => `<div id= "cartita" class="row carta mx-2">
+export const Carta = (img, title, currency, value) => `<div id= "cartita" class="row carta mx-2">
 <!--mx = margin:auto;-->
 <div class="col-md-4 min-vh-150">
     <!--Foto-->
-    <img src="../img/bitcoin.png" class="img-fluid" alt="Fotocripto" />
+    <img src="${img}" class="img-fluid" alt="Fotocripto" />
 </div>
 <div class="col-md-8">
     <!--Contenido-->
     <div class="row">
-        <div class="col-md-12 text-center">
+        <div id="card-title" class="col-md-12 text-center">
             <!--Nombre-->
-            Bitcoin
+            ${title}
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
             <!--Moneda-->
-            ARS
+            ${currency}
         </div>
-        <div class="col-md-6">
+        <div id="crypto-value"class="col-md-6">
             <!--Valor-->
-            34234234
+            ${value}
         </div>
     </div>
 </div>
